@@ -7,3 +7,12 @@ $secondary-light: #666666;
 $secondary-dark: #161616;
 $primary-text: #ffffff;
 $secondary-text: #ffffff;
+
+%link-click {
+  :hover {
+    transform: scale(1.05);
+  }
+  :active {
+    transform: scale(0.98);
+  }
+}

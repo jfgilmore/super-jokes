@@ -1,21 +1,52 @@
 @import '/src/styles/shared/library';
 
-.App {
-  text-align: center;
+.App-header {
+  color: $primary-light;
+  h1 {
+    margin: 1.5vh 0px;
+  }
 }
 
-.App-header {
+.App {
   background-color: $primary;
+  background-clip: border-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: calc(10px + 3vmin);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  background-image: url();
+  justify-content: flex-start;
 }
 
-.App-link {
-  color: $primary-comp;
+@media (min-width: 300px) {
+  .App {
+    background-image: url('../img/brands-people-uLRrrDtatBA-unsplash-small.jpg');
+  }
+}
+
+@media (min-width: 340px) {
+  .App {
+    background-image: url('../img/brands-people-uLRrrDtatBA-unsplash-large.jpg');
+  }
+}
+
+.social-link {
+  position: absolute;
+  align-self: flex-end;
+  box-sizing: content-box;
+  margin: 3vh 2vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 3em;
+  border-radius: 0.5em;
+  @extend %link-click;
+
+  img {
+    background-color: transparent;
+    height: calc(12px + 6vmin);
+    width: calc(12px + 6vmin);
+  }
 }
